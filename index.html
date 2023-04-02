@@ -1,46 +1,231 @@
 <!DOCTYPE html>
-<html lang="RU-ru">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>кафе "Гараж"</title>
-  
-  <!-- main style -->
-  <link rel="stylesheet" href="style.css">
-  <!-- cluster style -->
-  <link rel="stylesheet" href="#">
+    <!--  Заполнить googleMap  -->
+    <!--  Телефон в googleMap  -->
+    <!--  Фото  -->
+    <!--  Метрика (cсчётчик посещений)  -->
+    <!--  Тексты интересующие посетителя  -->
+    <!--  СДЕЛАЙ АДАПТИВ ПОД РАЗНЫЕ БРАУЗЕРЫ -->
+    <!--  Сверка услуг  -->
+    <!--  Material icons  -->
+<!-- https://www.google.com/search?q=%D0%B8%D0%B7%D0%B4%D0%B5%D0%BB%D0%B8%D1%8F+%D0%BB%D0%B0%D0%B7%D0%B5%D1%80%D0%BD%D0%BE%D0%B9+%D1%80%D0%B5%D0%B7%D0%BA%D0%B8+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%B0&tbm=isch&ved=2ahUKEwj4pvW89K_wAhXPzioKHRKTB0oQ2-cCegQIABAA&oq=bpltkbz+kfpthyjq+htprb+&gs_lcp=CgNpbWcQARgAMgQIABABUNcmWNcmYNs9aABwAHgAgAE9iAE9kgEBMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=Oi6RYPihA8-dqwGSpp7QBA&bih=635&biw=1349&hl=ru#imgrc=y-67onwjPXcwGM -->
+<!-- http://skt.technology/novosti/ -->
+<!-- https://www.google.com/search?q=%D0%B7%D0%B0%D0%B1%D0%BE%D1%80+%D0%B2%D1%8B%D1%80%D0%B5%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9+%D0%B8%D0%B7+%D0%BB%D0%B8%D1%81%D1%82%D0%B0+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%B0&tbm=isch&ved=2ahUKEwi6lY--6q3wAhVqi8MKHS47ACQQ2-cCegQIABAA&oq=%D0%B7%D0%B0%D0%B1%D0%BE%D1%80+%D0%B2%D1%8B%D1%80%D0%B5%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9+%D0%B8%D0%B7+%D0%BB%D0%B8%D1%81%D1%82%D0%B0+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%B0&gs_lcp=CgNpbWcQAzoECCMQJzoFCAAQsQM6CAgAELEDEIMBOgIIADoECAAQQzoKCAAQsQMQgwEQQzoHCAAQsQMQQzoGCAAQBRAeOgYIABAIEB46BAgAEBhQ-3lYxf4BYOKBAmgBcAB4AIABXogBxhKSAQIzNJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=UBeQYLqtLeqWjgau9oCgAg&bih=635&biw=1366&rlz=1C1IXYC_ruRU934RU934 -->
+
+    <!-- КОДИРОВКА -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link type="image/png" sizes="96x96" rel="icon" href="favicon.png">
+    <!-- ПОДКЛЮЧЕНИЕ ОСНОВНЫХ СТИЛЕЙ -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <title>Главная</title>
+
+    <!-- ПОДКЛЮЧЕНИЕ JQUERY -->
+    <script src='http://code.jquery.com/jquery-3.6.0.js'></script>
+    <script src='JS/script.js'></script>
+
+    <!-- SLICK SLIDER --><!-- source: https://www.youtube.com/watch?v=rXNfDfqtM3M -->>
+    <script src='JS/slick.min.js'></script>
+    <link rel="stylesheet" href="CSS/slick_slider.css">
+
+    <!-- ФАВИКОН -->
+    <!-- https://habr.com/ru/post/522844/ -->
+    <link type="image/x-icon" rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link type="image/png" sizes="16x16" rel="icon" href="img/favicon/favicon-16x16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicon/favicon-32x32.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="favicon.png">
+    <!-- Яндекс -->
+    <link type="image/png" sizes="120x120" rel="icon" href="img/favicon/favicon-120x120.png">
+    <!-- Chrome Android -->
+    <link type="image/png" sizes="192x192" rel="icon" href="…/android-icon-192x192.png">
+    <!-- Иконка закладки в iOS (PWA) -->
+    <link sizes="57x57" rel="apple-touch-icon" href="…/apple-touch-icon-57x57.png">
+    <link sizes="60x60" rel="apple-touch-icon" href="…/apple-touch-icon-60x60.png">
+    <link sizes="72x72" rel="apple-touch-icon" href="…/apple-touch-icon-72x72.png">
+    <link sizes="76x76" rel="apple-touch-icon" href="…/apple-touch-icon-76x76.png">
+    <link sizes="114x114" rel="apple-touch-icon" href="…/apple-touch-icon-114x114.png">
+    <link sizes="120x120" rel="apple-touch-icon" href="…/apple-touch-icon-120x120.png">
+    <link sizes="144x144" rel="apple-touch-icon" href="…/apple-touch-icon-144x144.png">
+    <link sizes="152x152" rel="apple-touch-icon" href="…/apple-touch-icon-152x152.png">
+    <link sizes="180x180" rel="apple-touch-icon" href="…/apple-touch-icon-180x180.png">
+    <!-- macOS -->
+    <link color="#e52037" rel="mask-icon" href="…/safari-pinned-tab.svg">
+    <!-- Windows [IE11 и Windows 8.1] -->
+    <!-- Данной строкой мы указываем цвет фона плитки: -->
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="…/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="…/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="…/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="…/mstile-310x310.png">
+    <meta name="msapplication-square310x310logo" content="…/mstile-310x150.png">
+    <!-- Можно указать имя вашего веб-сайта: -->
+    <meta name="application-name" content="My Application">
+    <!-- Что такое browserconfig? Это XML-документ, в котором перечислены различные значки, соответствующие пользовательскому интерфейсу Metro UI. -->
+    <meta name="msapplication-config" content="…/browserconfig.xml">
+    <!-- Файл манифесиа -->
+    <link rel="manifest" href="…/manifest.json">
+    <!-- С помощью последней строки кода «theme-color» можно закрасить адресную строку и строку уведомлений в любой цвет. В значении content задается цвет. -->
+    <meta name="theme-color" content="#ffffff">
+    <!-- Для проверки фавиконв на различных платформах https://realfavicongenerator.net/ -->
 </head>
+
 <body>
+    <div class="wrapper">
+        <!-- HEADER -->
+        <header class="header">
+            <!-- ограничение ширины "HEADER" -->
+            <div class="container">
+                <div class="header_body">
+                    <!-- ЛОГОТИП -->
+                    <a class="header_logo" href="index.html">
+                        <div class="logo"></div>
+                    </a>
+                    <!-- БУРГЕР -->
+                    <div class="header_burger">
+                        <span></span>
+                    </div>
+                    <nav class="header_menu">
+                        <ul class="header_list">
+                            <li>
+                                <a href="#" class="header_link" style='color: var(--color-1); border-bottom: 2px solid var(--color-1)'>Главная</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header_link">Новости</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header_link">Продукция</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header_link">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header_link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
-  <header>
-  	<!-- SVG логотип -->
-  	<div class="logo"></div>
-  	<!-- кнопочки в header, на смартфоне будет 1кнопка -->
-  	<div class="buttons">
-  	  <div class="button">1</div>
-  	  <div class="button">2</div>
-  	  <div class="button">3</div>
-  	  <div class="button">4</div>
-  	</div>
-  	
-    <!-- кста, что это--><div class="book"></div>
-  </header>
+        <div class="box_img">
+            <div class="box_img_text">
+                <h1>заголовок</h1>
+                <p>интригующий текст о кафе. Описание услуг, блюд, возможностей в аренде кафе и тд.</p>
+            </div>
+        </div>
 
-    <main>
-      <div class="block2"></div>
-      <div></div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2255.555935909403!2d39.514455!3d55.57493!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414bad8febde7243%3A0x5d47eb3db5077a9d!2z0JrQsNGE0LUgItCT0LDRgNCw0LYiINCo0LDRgtGD0YDQsA!5e0!3m2!1sru!2sru!4v1680454687899!5m2!1sru!2sru" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </main>
 
-	<footer>
-		<!-- ссылки на соц. сети -->
-		<div class="massages">
-			<div class="massage"></div>
-		</div>
-		
-		<!-- контакты -->
-		<a href="tel:1111">позвонить</a>
-		<a href="">1111@gmail.com</a>
-	</footer>
+        <div class="clover">
+            <div class="s">
 
-</body>
-</html>
+                <div class="quality">
+                    <div class="quality_ico">
+                        <img src="img/ICON/message.svg" alt="Нет картинки? печаль ;(">
+                    </div>
+                    <div class="quality_text">
+                        <font>всегда на связи</font>
+                        <p>пишите и звоните в любое удобное для вас время, мы рады с вами услышаться</p>
+                    </div>
+                </div>
+
+                <div class="quality">
+                    <div class="quality_ico">
+                        <img src="img/ICON/gear.svg" alt="Нет картинки? печаль ;(">
+                    </div>
+                    <div class="quality_text">
+                        <font>напиши что-то я хз</font>
+                        <p>и тут тоже</p>
+                    </div>
+                </div>
+
+
+                <div class="quality">
+                    <div class="quality_ico">
+                        <img src="img/ICON/guarantee.svg" alt="Нет картинки? печаль ;(">
+                    </div>
+                    <div class="quality_text">
+                        <font>гарантии</font>
+                        <p>гарантируем качество, уют и веселое время провождение</p>
+                    </div>
+                </div>
+
+                <div class="quality">
+                    <div class="quality_ico">
+                        <img src="img/ICON/hub.svg" alt="Нет картинки? печаль ;(">
+                    </div>
+                    <div class="quality_text">
+                        <font>кстати</font>
+                        <p>иконки можешь подобрать тут: <a href="https://fonts.google.com/icons">Google material icons</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SLICK SLIDER -->
+        <div class="services_box">
+            <h2>Уют и покой</h2>
+            <div class="slider">
+                <div class="slider_item">
+                    <img src="img/slick_slider/AL/1.jpg" alt="Нет картинки? печаль ;(">
+                </div>
+                <div class="slider_item">
+                    <img src="img/slick_slider/AL/2.jpg" alt="Нет картинки? печаль ;(">
+                </div>
+                <div class="slider_item">
+                    <img src="img/slick_slider/AL/3.jpg" alt="Нет картинки? печаль ;(">
+                </div>
+               <div class="slider_item">
+                    <img src="img/slick_slider/AL/4.jpg" alt="Нет картинки? печаль ;(">
+                </div>
+            </div>
+        </div>
+
+        <div class="request_and_map">
+            <div class="request">
+                <font class=''>Забронировать столик:</font>
+                <input class='email' type='email' value='' maxlength='250' pattern='^.+@.+\.[a-zA-Z]{2,63}$' tabindex='1' placeholder='Укажите свою почту...'>
+                <textarea class='' type='email' placeholder='Опишите заказ...' accesskey='s' rows='10' required tabindex='2' cols='50'></textarea>
+                <input type='button' class='button' value='ОТПРАВИТЬ' >
+            </div>
+            <!-- google map -->
+            <!-- https://youtu.be/LKgDqdJP7BI -->
+            <div class="map_box">
+                <font>Как нас найти? Всё просто</font>
+                <iframe class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1127.7827324574866!2d39.51446894346238!3d55.5747641047285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414bad8febde7243%3A0x5d47eb3db5077a9d!2z0JrQsNGE0LUgItCT0LDRgNCw0LYiINCo0LDRgtGD0YDQsA!5e0!3m2!1sru!2sru!4v1680460242658!5m2!1sru!2sru" width="800px" height="600px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- https://yandex.ru/search/?clid=2186621&text=ssl%20%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0&lr=10727&redircnt=1619534495.1 -->
+        </div>
+    </div>
+
+
+    <!-- ПОДВАЛ -->
+    <footer class="basement">
+
+        <div class="basement_line">
+            <div class="basement_item">
+                <h3>Контакты:</h3>
+                <!-- НОМЕРА ТЕЛЕФОНОВ -->
+                <div class=phone><a href="tel:+74964525908">Тел1: +7(999)999-99-99</a></div>
+                <div class=phone><a href="tel:+74964523838">Тел2: +7(999)999-99-99</a></div>
+                <div class=phone><a href="tel:+74964524588">Факс: +7(999)999-99-99</a></div>
+            </div>
+
+            <div class="basement_item">
+                <h3>Местоположение:</h3>
+                <div class=phone>Адрес: <a href="https://goo.gl/maps/tNKv8LKDnGxfYYYR7">Проспект Ильича, здание №66, город Шатура, Московская область</a></div>
+                <div class=phone>Индекс: <a href="#"></a>140700</div>
+            </div>
+
+        </div>
+
+        <div class="copy"><a href='https://nris.ru/blog/chto-oznachaet-znak-kopirajta/'>&#169;</a> 2021 Официальный сайт кафе «Гараж»</div>
+        <button id="test">∆</button>
+    </footer>
+
+</body></html>
