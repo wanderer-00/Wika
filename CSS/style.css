@@ -1,7 +1,7 @@
-:root{
+:root {
     --color-1: #DEB16D;
     --color-2: #000;
-    --color-3: #000;
+    --color-3: #FFF;
     --color-4: #000;
 }
 
@@ -14,8 +14,8 @@
     border: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-/*    border: 1px solid purple;*/
-         /* ВОСПОЛЬЗУЙСЯ, ЕСЛИ ТЫ РАЗРАБОТЧИК, ХОРОШАЯ ФИТЧА... */
+    /*    border: 1px solid purple;*/
+    /* ВОСПОЛЬЗУЙСЯ, ЕСЛИ ТЫ РАЗРАБОТЧИК, ХОРОШАЯ ФИТЧА... */
 }
 
 /* К ВИДИМОЙ ЧАСТИ САЙТА - "BODY" */
@@ -27,10 +27,21 @@ body {
 }
 
 /* scroll bar */
-::-webkit-scrollbar {width: 14px}
-::-webkit-scrollbar-track {background: #18191d}
-::-webkit-scrollbar-thumb {background: #3b4146}
-::-webkit-scrollbar-thumb:hover {background: #474e54}
+::-webkit-scrollbar {
+    width: 14px
+}
+
+::-webkit-scrollbar-track {
+    background: #18191d
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3b4146
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #474e54
+}
 
 a {
     color: white;
@@ -56,19 +67,57 @@ textarea {
     resize: none;
 }
 
-.wrapper {
-    max-width: 100%;
-    overflow: hidden;
-    min-height: 100%;
-}
-
-
-
-
-
 .content {
     padding: 100px 0 0 0;
 }
+
+
+
+
+/* адаптив под разные устройства */
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+}
+
+@media (orientation: portrait) {
+
+    /* scroll bar */
+    ::-webkit-scrollbar {
+        display: none
+    }
+}
+
+
+
+
 
 /* При ширине экрана = 767px: */
 @media (max-width:767px) {
@@ -184,9 +233,10 @@ textarea {
 
 
     /* КЛЕВЕР */
-    .clover{
+    .clover {
         padding: 0 !important;
     }
+
     .s {
         grid-template-columns: 1fr !important;
         width: 100% !important;
@@ -200,13 +250,15 @@ textarea {
         height: 700px;
         background-image: url(../img/1.jpg);
         background-color: red;
-        
-        border: 1px solid purple; 
+
+        border: 1px solid purple;
     }
+
     .box_img img {
         width: 100%;
     }
-    .box_img div{
+
+    .box_img div {
         top: 0px !important;
         left: 0px !important;
         max-width: 100% !important;
@@ -216,18 +268,21 @@ textarea {
 
 
     /* ЗАЯВКА | КАРТА */
-    .request_and_map{
+    .request_and_map {
         width: 100% !important;
         padding: 10px !important;
         grid-template-columns: 1fr !important;
     }
-    .request{
+
+    .request {
         padding: 0 !important;
     }
-    .map_box{
+
+    .map_box {
         width: 100% !important;
     }
-    .map{
+
+    .map {
         width: 100% !important;
     }
 
@@ -236,13 +291,16 @@ textarea {
     .basement {
         padding: 20px 10px !important;
     }
+
     .basement_line {
         display: block !important;
     }
+
     .basement_item {
         width: 100% !important;
         margin-bottom: 20px !important;
     }
+
     .basement_item h3 {
         padding: 0 0 4px 0 !important;
     }
@@ -267,7 +325,7 @@ textarea {
     background-size: cover;
     background-color: black;
     background-position-y: -250px;
-/*    border: 2px solid orange*/
+    /*    border: 2px solid orange*/
 }
 
 .box_img div {
@@ -288,27 +346,33 @@ textarea {
     justify-content: center;
     align-items: center;
 }
+
 /* стабилитрон */
 .s {
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 .quality {
     display: flex;
     margin: 20px;
 }
+
 .quality_ico {
     width: 100px;
     margin-right: 10px;
 }
+
 .quality_ico img {
     width: 100%;
 }
+
 .quality_text {
     color: black;
     width: 100%;
 }
+
 .quality_text font {
     display: block;
     color: var(--color-1);
@@ -318,13 +382,14 @@ textarea {
 
 
 /* SLIDER SERVICES */
-.services_box{
+.services_box {
     color: white;
     padding: 20px;
     text-align: center;
     background-color: black;
 }
-.services_box h2{
+
+.services_box h2 {
     padding: 0 0 20px 0;
 }
 
@@ -339,10 +404,12 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
+
 /* заявка */
 .request {
     padding: 0 20px 0 0;
 }
+
 /* поля заявки */
 .request input,
 textarea {
@@ -351,6 +418,7 @@ textarea {
     padding: 10px;
     border: 2px solid black;
 }
+
 /* кнопка отправки заявки */
 .button {
     content: 'wwwwwww';
@@ -365,24 +433,28 @@ textarea {
     background: white;
     width: 200px;
 }
+
 .button:hover {
     color: white;
     background: #1ECD97;
 }
-.button:focus{
+
+.button:focus {
     color: white;
     content: '&#10004;' !important;
     background: #1ECD97;
 }
+
 /* MAP */
-.map_box{
+.map_box {
     width: 100%;
 }
+
 .map {
     height: 400px;
     width: 100%;
     margin: 10px 0;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
     border-radius: 10px;
 }
 
@@ -394,16 +466,20 @@ textarea {
     padding: 20px;
     color: white;
 }
+
 .basement_line {
     display: flex;
     justify-content: space-between;
 }
+
 .basement_item h3 {
     padding-bottom: 18px;
 }
+
 .phone {
     padding-bottom: 5px;
 }
+
 .copy,
 .copy a {
     color: darkgray;
@@ -413,13 +489,13 @@ textarea {
 }
 
 /* Да, это я */
-#pidor{
+#pidor {
     position: absolute;
     right: 20px;
 }
 
 /* PRODUCTS */
-.cluster{
+.cluster {
     margin-top: 80px;
     min-width: 80%;
     display: flex;
@@ -427,7 +503,8 @@ textarea {
     justify-content: center;
     align-items: stretch;
 }
-.product{
+
+.product {
     overflow: hidden;
     position: relative;
     /* SPACE */
@@ -436,28 +513,33 @@ textarea {
     /* SIZE */
     width: 200px;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
     transition: 0.3s;
     border-radius: 5px;
 }
-.product:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+
+.product:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
-.product img{
+
+.product img {
     max-width: 100%;
 }
-.product_ico{
+
+.product_ico {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 250px;
     margin: 10px;
 }
-.product_text{
+
+.product_text {
     color: black;
     text-align: center;
 }
-.new{
+
+.new {
     position: absolute;
     top: 0;
     right: 0;
@@ -465,9 +547,4 @@ textarea {
     border-radius: 0 0 0 8px;
     background: red;
     color: white;
-}
-
-@media (orientation: portrait){
-    /* scroll bar */
-    ::-webkit-scrollbar {display: none}
 }
