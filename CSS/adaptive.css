@@ -1,0 +1,221 @@
+/* адаптив под разные устройства */
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+}
+
+@media (orientation: portrait) {
+    /* scroll bar */
+    ::-webkit-scrollbar {
+        display: none
+    }
+}
+
+
+
+
+
+/* При ширине экрана = 767px: */
+@media (max-width:767px) {
+    body.lock {
+        overflow: hidden;
+    }
+
+    .header_body {
+        height: 50px;
+
+    }
+
+    .header_logo {
+        flex: 0 0 40px;
+        margin: 0 5px;
+    }
+
+    .header_burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+        margin: 0 10px;
+    }
+
+    .header_burger span {
+        position: absolute;
+        background-color: white;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header_burger:before,
+    .header_burger::after {
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header_burger:before {
+        top: 0;
+    }
+
+    .header_burger:after {
+        bottom: 0;
+    }
+
+    .header_burger.active span {
+        transform: scale(0);
+    }
+
+    .header_burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header_burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header_menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        padding: 70px 10px 20px 10px;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+        font-size: 28px;
+    }
+
+    .header_menu.active {
+        top: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header_list {
+        display: block;
+    }
+
+    .header_list li {
+        margin: 0 0 20px 0;
+    }
+
+    .map {
+        width: 100%;
+        height: 320px;
+    }
+
+    .stabilitron {
+        width: 98%;
+    }
+
+    .header_link {
+        border: none;
+    }
+
+    .header_link:hover {
+        border: none;
+    }
+
+
+    /* КЛЕВЕР */
+    .clover {
+        padding: 0 !important;
+    }
+
+    .s {
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+    }
+
+
+    /* 1-ЫЙ СЛАЙД */
+    .box_img {
+        margin-top: 30px;
+        min-width: 100%;
+        background-image: url(../img/1.jpg);
+    }
+
+    .box_img div {
+        top: 0px !important;
+        left: 0px !important;
+        max-width: 100% !important;
+        height: 100%;
+        border-radius: 0 !important;
+    }
+
+
+    /* ЗАЯВКА | КАРТА */
+    .request_and_map {
+        width: 100% !important;
+        padding: 10px !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    .request {
+        padding: 0 !important;
+    }
+
+    .map_box {
+        width: 100% !important;
+    }
+
+    .map {
+        width: 100% !important;
+    }
+
+
+    /* ПОДВАЛ */
+    .basement {
+        padding: 20px 10px !important;
+    }
+
+    .basement_line {
+        display: block !important;
+    }
+
+    .basement_item {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+
+    .basement_item h3 {
+        padding: 0 0 4px 0 !important;
+    }
+}

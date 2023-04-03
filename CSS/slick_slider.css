@@ -45,11 +45,12 @@
 .slick-active {
 }
 .slider_item img{
-    max-height: 400px;
+    max-width: 100%;
+    aspec-rato: 16/9;
 }
 @media (max-width:767px) {
     .slider_item img{
-        max-height: 110px;
+        max-width: 100%;
     }
     .slick-arrow{
         display: none !important;
