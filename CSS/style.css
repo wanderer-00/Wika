@@ -23,7 +23,7 @@ html,
 body {
     height: 100%;
     color: black;
-    background-color: var(--color-background-2);
+    background-color: #152d35;
 }
 
 /* scroll bar */
