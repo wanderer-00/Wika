@@ -23,7 +23,7 @@ html,
 body {
     height: 100%;
     color: black;
-    background-color: #345b63;
+    background-color: #112031;
 }
 
 /* scroll bar */
@@ -136,6 +136,7 @@ textarea {
 .quality_text {
     color: black;
     width: 100%;
+
 }
 
 .quality_text font {
