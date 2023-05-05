@@ -122,11 +122,13 @@ textarea {
 .quality {
     display: flex;
     margin: 20px;
+    color: #FF9A3C;
 }
 
 .quality_ico {
     width: 100px;
     margin-right: 10px;
+    color: #52616B;
     
 }
 
@@ -135,14 +137,14 @@ textarea {
 }
 
 .quality_text {
-    color: black;
+    color: #52616B;
     width: 100%;
 
 }
 
 .quality_text font {
     display: block;
-    color: var(--color-1);
+    color: #FF9A3C;
     font-size: 26px;
     font-weight: 500;
 }
