@@ -147,11 +147,7 @@ textarea {
 
 .quality_text > font {
     display: block;
-<<<<<<< Updated upstream
     color: var(--color-oranj);
-=======
-    color: #52616B;
->>>>>>> Stashed changes
     font-size: 26px;
     font-weight: 500;
 }
