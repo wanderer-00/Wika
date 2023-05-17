@@ -125,6 +125,10 @@ textarea {
 .quality {
     display: flex;
     margin: 20px;
+<<<<<<< Updated upstream
+=======
+    color: #52616B;
+>>>>>>> Stashed changes
 }
 
 .quality_ico {
@@ -147,7 +151,11 @@ textarea {
 
 .quality_text > font {
     display: block;
+<<<<<<< Updated upstream
     color: var(--color-oranj);
+=======
+    color: #52616B;
+>>>>>>> Stashed changes
     font-size: 26px;
     font-weight: 500;
 }
