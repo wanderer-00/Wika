@@ -222,7 +222,7 @@ input.tel {
   outline: none;
 }
 .btn-7 {
-background: transparent;
+background: var(--color-oranj);
   line-height: 42px;
   padding: 0;
   border: none;
