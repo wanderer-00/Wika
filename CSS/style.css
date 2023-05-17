@@ -140,7 +140,7 @@ textarea {
 }
 
 .quality_text {
-    color: #52616B;
+    color: var(--text-main);
     width: 100%;
 
 }
