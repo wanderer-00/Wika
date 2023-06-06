@@ -50,7 +50,7 @@
 
 a.header_logo > div.logo {
     aspect-ratio: 1/1;
-    background: var(--color-oranj) url(../img/logo.jpg) no-repeat;
+    background: var(--color-oranj) url(../img/SVG/logo.svg) no-repeat;
     background-position: center;
     background-size: contain;
     min-width: 100%;
